@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/focus-sessions")
-@CrossOrigin(origins = { "http://localhost:5173", "http://localhost:3000" })
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class FocusController {
     private final FocusService focusService;
 

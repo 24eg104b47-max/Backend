@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = { "http://localhost:5173", "http://localhost:3000" })
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class TaskController {
     private final TaskService taskService;
     private final TaskCommentRepository commentRepository;

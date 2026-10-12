@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/achievements")
-@CrossOrigin(origins = { "http://localhost:5173", "http://localhost:3000" })
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class AchievementController {
     private final AchievementService achievementService;
 
